@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>初级-Part1-语言基础-C++简介 | 陈添翼的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://chentianyicty6330.github.io/favicon.ico?v=1674958785443">
+<link rel="stylesheet" href="https://chentianyicty6330.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+以下内容转载于百度百科（有删减）
+
+C++是一种计算机高级程序设计语言，由C语言扩展升级而产生 ，最早于1979年由本贾尼·斯特劳斯特卢普在AT&amp;T贝尔工作室研发。
+C++既可以进行C语言的过程化程序设计，又可以进行以抽象数据类型..." />
+    <meta name="keywords" content="c++learning" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://chentianyicty6330.github.io">
+        <img src="https://chentianyicty6330.github.io/images/avatar.png?v=1674958785443" class="site-logo">
+        <h1 class="site-title">陈添翼的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      我是一名爱好广泛的初二学生
+<br> 一个没有博客的程序员不是好程序员</br>
+<br> See me on <a href="https://github.com/ChenTianyiCTY6330" target="_blank">GitHub</a> / <a href="https://blog.csdn.net/weixin_47561684" target="_blank">CSDN</a> / <a href="https://www.zhihu.com/people/chentianyi-93-62" target="_blank">知乎</a> / <a href="https://www.luogu.com.cn/user/696772" target="_blank">洛谷</a> </br>
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> / <a href="https://github.com/ChenTianyiCTY6330/ChenTianyiCTY6330.github.io" target="_blank">ChenTianyiCTY6330</a> | <a class="rss" href="https://chentianyicty6330.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">初级-Part1-语言基础-C++简介</h2>
+            <div class="post-date">2023-01-29</div>
+            
+              <div class="feature-container" style="background-image: url('https://chentianyicty6330.github.io/post-images/primary-p1-language-basis-c-introduction.jpeg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <blockquote>
+<p>以下内容转载于百度百科（有删减）</p>
+</blockquote>
+<p>C++是一种计算机高级程序设计语言，由C语言扩展升级而产生 ，最早于1979年由本贾尼·斯特劳斯特卢普在AT&amp;T贝尔工作室研发。</p>
+<p>C++既可以进行C语言的过程化程序设计，又可以进行以抽象数据类型为特点的基于对象的程序设计，还可以进行以继承和多态为特点的面向对象的程序设计。C++擅长面向对象程序设计的同时，还可以进行基于过程的程序设计。</p>
+<p>C++拥有计算机运行的实用性特征，同时还致力于提高大规模程序的编程质量与程序设计语言的问题描述能力。</p>
+<hr>
+<h2 id="发展历程">发展历程</h2>
+<p>1970年，AT&amp;T贝尔实验室的工作人员D.Ritchie和K.Thompson共同研发了C语言。研制C语言的初衷是用它编写UNIX系统程序，因此，实际上C语言是UNIX的“副产品”。</p>
+<p>1971年，瑞士联邦技术学院N.Wirth教授发明了第一个结构化的编程语言Pascal。</p>
+<p>20世纪70年代中期，本贾尼·斯特劳斯特卢普在剑桥大学计算机中心工作。斯特劳斯特卢普希望开发一个既要编程简单、正确可靠，又要运行高效、可移植的计算机程序设计语言。而以C语言为背景，以Simula思想为基础的语言，正好符合斯特劳斯特卢普的初衷和设想。</p>
+<p>1979年，本贾尼·斯特劳斯特卢普到了AT&amp;T贝尔实验室，开始从事将C改良为带类的C（C with classes）的工作。、1983年，该语言被正式命名为C++。</p>
+<p>1985年、1990年和1994年，C++先后进行3次主要修订。</p>
+<p>C++的标准化工作于1989年开始，并成立了一个ANSI和ISO（International Standards Organization）国际标准化组织的联合标准化委员会。</p>
+<p>1994年1月25曰，联合标准化委员会提出了第一个标准化草案。在该草案中，委员会在保持斯特劳斯特卢普最初定义的所有特征的同时，还增加了部分新特征。</p>
+<p>在完成C++标准化的第一个草案后不久，亚历山大·斯特潘诺夫（Alexander Stepanov）创建了标准模板库（Standard Template Library，STL）。在通过了标准化第一个草案之后，联合标准化委员会投票并通过了将STL包含到C++标准中的提议。STL对C++的扩展超出了C++的最初定义范围。虽然在标准中增加STL是个很重要的决定，但也因此延缓了C++标准化的进程。</p>
+<p>1997年11月14日，联合标准化委员会通过了该标准的最终草案，</p>
+<p>1998年，C++的ANSI/IS0标准被投入使用。</p>
+<hr>
+<h2 id="语言标准">语言标准</h2>
+<p>自C++的ANSI/IS0标准投用以来，共进行过5次更新。</p>
+<p><strong>C++语言标准更新记录</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>标准版本</strong></th>
+<th style="text-align:left"><strong>发布时间</strong></th>
+<th style="text-align:left"><strong>正式名称</strong></th>
+<th style="text-align:left"><strong>更新内容</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">C++ 03</td>
+<td style="text-align:left">2003年</td>
+<td style="text-align:left">ISO/IEC 14882:2003</td>
+<td style="text-align:left">对C++ 98版本的漏洞做了部分修改。</td>
+</tr>
+<tr>
+<td style="text-align:left">C++ 11</td>
+<td style="text-align:left">2011年8月12日</td>
+<td style="text-align:left">ISO/IEC 14882:2011</td>
+<td style="text-align:left">对容器类的方法做了三项主要修改：</td>
+</tr>
+<tr>
+<td style="text-align:left">C++ 14</td>
+<td style="text-align:left">2014年8月18日</td>
+<td style="text-align:left">ISO/IEC 14882:2014</td>
+<td style="text-align:left">C++11的增量更新。主要是支持普通函数的返回类型推演，泛型lambda，扩展的lambda捕获，对constexpr函数限制的修订，constexpr变量模板化等。</td>
+</tr>
+<tr>
+<td style="text-align:left">C++ 17</td>
+<td style="text-align:left">2017年12月6日</td>
+<td style="text-align:left">ISO/IEC 14882:2017</td>
+<td style="text-align:left">新增UTF-8 字符文字、折叠表达式（fold expressions）：用于可变的模板、内联变量（inline variables）：允许在头文件中定义变量；在if和switch语句内可以初始化变量；结构化绑定（Structured Binding）：for（auto [key,value] : my_map）{…}；类模板参数规约（Class Template Argument Deduction）：用pair p{1, 2.0}; 替代pair{1, 2.0};；&amp;gt;；static_assert的文本信息可选；删除trigraphs；在模板参数中允许使用typename（作为替代类）；来自 braced-init-list 的新规则用于自动推导；嵌套命名空间的定义；允许命名空间和枚举器的属性；新的标准属性：[[fallthrough]], [[maybe_unused]] 和 [[nodiscard]]；对所有非类型模板参数进行常量评估；Fold表达式，用于可变的模板；A compile-time static if with the form if constexpr（expression）；结构化的绑定声明，允许auto [a, b]=getTwoReturnValues（）。</td>
+</tr>
+<tr>
+<td style="text-align:left">C++ 20</td>
+<td style="text-align:left">2020年12月7日</td>
+<td style="text-align:left">ISO/IEC 14882:2020</td>
+<td style="text-align:left">新增模块（Modules）、协程（Coroutines）、范围 （Ranges）、概念与约束 （Constraints and concepts）、指定初始化 (designated initializers）、操作符“&lt;=&gt; != ==”；constexpr支持：new/delete、dynamic_cast、try/catch、虚拟、constexpr向量和字符串；计时：日历、时区支持。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="编程开发">编程开发</h2>
+<h3 id="集成开发环境"><strong>集成开发环境</strong></h3>
+<p>截至2014年3月，C++共有12个主流集成开发环境。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Visual Studio（Visual C++）</th>
+<th style="text-align:left">Dev C++</th>
+<th style="text-align:left">C++ Builder</th>
+<th style="text-align:left">kDevelop</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Anjuta</td>
+<td style="text-align:left">Code::Blocks</td>
+<td style="text-align:left">Visual Mingw</td>
+<td style="text-align:left">Ideone</td>
+</tr>
+<tr>
+<td style="text-align:left">Eclipse CDT</td>
+<td style="text-align:left">Compilr</td>
+<td style="text-align:left">Code Lite</td>
+<td style="text-align:left">Netbeans C++</td>
+</tr>
+</tbody>
+</table>
+<h3 id="编译器"><strong>编译器</strong></h3>
+<p>截至2014年3月，C++共有5款主流编译器。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Ultimate++</th>
+<th style="text-align:left">Digital Mars</th>
+<th style="text-align:left">C-Free</th>
+<th style="text-align:left">MinGW</th>
+<th style="text-align:left">Tiny C Compiler</th>
+</tr>
+</thead>
+</table>
+<hr>
+<h2 id="语言特点">语言特点</h2>
+<ul>
+<li><strong>与C语言的兼容性</strong></li>
+</ul>
+<p>C++与C语言完全兼容，C语言的绝大部分内容可以直接用于C++的程序设计，用C语言编写的程序可以不加修改地用于C++。</p>
+<ul>
+<li><strong>数据封装和数据隐藏</strong></li>
+</ul>
+<p>在C++中，类是支持数据封装的工具，对象则是数据封装的实现。C++通过建立用户定义类支持数据封装和数据隐藏。</p>
+<p>在面向对象的程序设计中，将数据和对该数据进行合法操作的函数封装在一起作为一个类的定义。对象被说明为具有一个给定类的变量。每个给定类的对象包含这个类所规定的若干私有成员、公有成员及保护成员。完好定义的类一旦建立，就可看成完全封装的实体，可以作为一个整体单元使用。类的实际内部工作隐藏起来，使用完好定义的类的用户不需要知道类的工作原理，只要知道如何使用它即可。</p>
+<ul>
+<li><strong>支持继承和重用</strong></li>
+</ul>
+<p>在C++现有类的基础上可以声明新类型，这就是继承和重用的思想。通过继承和重用可以更有效地组织程序结构，明确类间关系，并且充分利用已有的类来完成更复杂、深入的开发。新定义的类为子类，成为派生类。它可以从父类那里继承所有非私有的属性和方法，作为自己的成员。</p>
+<ul>
+<li><strong>多态性</strong></li>
+</ul>
+<p>采用多态性为每个类指定表现行为。多态性形成由父类和它们的子类组成的一个树型结构。在这个树中的每个子类可以接收一个或多个具有相同名字的消息。当一个消息被这个树中一个类的一个对象接收时，这个对象动态地决定给予子类对象的消息的某种用法。多态性的这一特性允许使用高级抽象。</p>
+<p>继承性和多态性的组合，可以轻易地生成一系列虽然类似但独一无二的对象。由于继承性，这些对象共享许多相似的特征。由于多态性，一个对象可有独特的表现方式，而另一个对象有另一种表现方式。</p>
+<hr>
+<h2 id="工作原理">工作原理</h2>
+<p>C++语言的程序开发环境，为了方便测试，将调试环境做成了解释型。即开发过程中，以解释型的逐条语句执行方式来进行调试，以编译型的脱离开发环境而启动运行的方式来生成程序最终的执行代码。</p>
+<p>开发C++应用程序，需要经过编写源程序、编译、连接程序生成可执行程序、运行程序四个步骤。生成程序是指将源码（C++语句）转换成一个可以运行的应用程序的过程。如果程序编写正确，那么通常只需按一个功能键，即可完成该过程。</p>
+<p>第一步对程序进行编译，这需要用到编译器（compiler）。编译器将C++语句转换成机器码（也称为目标码）；如果该步骤成功执行，下一步就是对程序进行链接，这需要用到链接器（linker）。链接器将编译获得机器码与C++库中的代码进行合并。C++库包含了执行某些常见任务的函数（“函数”是子程序的另一种称呼）。例如，一个C++库中包含标准的平方根函数sqrt，所以不必亲自计算平方根。C++库中还包含一些子程序，它们把数据发送到显示器，并知道如何读写硬盘上的数据文件。</p>
+<hr>
+<h2 id="语言基础">语言基础</h2>
+<h3 id="基本类型">基本类型</h3>
+<p>C++语言数据类型可以分为两大类：基本类型和引用类型。基本类型是指不能再分解的数据类型，其数据在函数的调用中是以传值方式工作的；引用类型有时也称复合类型，它是可以分解为基本类型的数据类型，其数据在函数调用中是以传址方式来工作的。</p>
+<ul>
+<li><strong>整型</strong></li>
+</ul>
+<p>1、整数常量</p>
+<p>整数常量是不带小数的数值，用来表示正负数。例2—2中Ox55、0x55ff、1000000都是c++语言的整数常量。</p>
+<p>c++语言的整数常量有三种形式：十进制、八进制、十六进制。</p>
+<p>（1）十进制整数是由不以0开头的0～9的数字组成的数据。</p>
+<p>（2）八进制整数是由以0开头的0～7的数字组成的数据。</p>
+<p>（3）十六进制整数是由以0x或0x开头的0～9的数字及A～F的字母(大小写字母均可)组成的数据。</p>
+<p>例如：</p>
+<p>0，63，83是十进制数。</p>
+<p>00，077，0123是八进制数。</p>
+<p>0x0，Ox0，0x53，0x53，0x3f，0x3f是十六进制数。</p>
+<p>整数常量的取值范围是有限的，它的大小取决于此类整型数的类型，与所使用的进制形式无关。</p>
+<p>2、整型变量类型</p>
+<p>整型变量类型有byte，short，int，long四种说明符，它们都是有符号整型变量类型。</p>
+<p>（1）byte类型</p>
+<p>byte类型说明一个带符号的8位整型变量。由于不同的机器对多字节数据的存储方式不同，可能是从低字节向高字节存储，也可能是从高字节向低字节存储。这样，在分析网络协议或文件格式时，为了解决不同机器上的字节存储顺序问题，用byte类型来表示数据是合适的。</p>
+<p>（2）short类型</p>
+<p>short类型说明一个带符号的16位整型变量。short类型限制了数据的存储应为先高字节，后低字节。</p>
+<p>（3）int类型</p>
+<p>int类型说明一个带符号的32位整型变量。int类型是一种最丰富、最有效的类型。它最常用于计数、数组访问和整数运算。</p>
+<p>（4）long类型</p>
+<p>long类型说明一个带符号的64位整型变量。对于大型计算，常常会遇到很大的整数，并超出int所表示的范围，这时要使用long类型。</p>
+<ul>
+<li><strong>浮点型</strong></li>
+</ul>
+<p>1、浮点数常量</p>
+<p>浮点数是带有小数的十进制数，可用一般表示法或科学记数法表示。0.23f、0.7e-3都是c++语言的浮点数常量。</p>
+<p>（1）一般表示法：十进制整数+小数点+十进制小数。</p>
+<p>（2）科学记数法：十进制整数+小数点+十进制小数+E（<em>或e</em>）+正负号+指数。</p>
+<p>例如：3.14159，0.567，9777.12是一般表示法形式，1.234e5，4.90867e-2是科学记数法形式。</p>
+<p>c++语言的浮点数常量在机器中有单精度和双精度之分。单精度以32位形式存放，用f/F做后缀标记(可以省略)；双精度则以64位形式存放。当一个浮点数常量没有特别指定精度时，则它为双精度浮点数常量。</p>
+<p>2、浮点变量类型</p>
+<p>浮点变量也称实数变量，用于需要精确到小数的函数运算中，有float和double两种类型说明符。</p>
+<p>（1）float类型</p>
+<p>float类型是一个位数为32位的单精度浮点数。它具有运行速度较快，占用空间较少的特点。</p>
+<p>（2）double类型</p>
+<p>double类型是一个位数为64的双精度浮点数。双精度数在某些具有优化和高速运算能力的现代处理机上运算比单精度数快。双精度类型double比单精度类型float具有更高的精度和更大表示范围，常常使用。</p>
+<ul>
+<li><strong>字符型</strong></li>
+</ul>
+<p>1、字符型常量</p>
+<p>字符型常量是指由单引号括起来的单个字符。</p>
+<p>例如：’a’，’A’，’z’，‘$’，’?’。</p>
+<p>注意：’a’和’A’是两个不同的字符常量。</p>
+<p>除了以上形式的字符常量外，c++语言还允许使用一种以“\”开头的特殊形式的字符常量。这种字符常量称为转义字符，用来表示一些不可显示的或有特殊意义的字符。</p>
+<p>2、字符型变量</p>
+<p>字符型变量的类型说明符为char，它在机器中占8位，其范围为0～255。</p>
+<p>注意：字符型变量只能存放一个字符，不能存放多个字符，例如：</p>
+<pre><code>char a='am';
+</code></pre>
+<p>这样定义赋值是错误的。</p>
+<ul>
+<li><strong>布尔型</strong></li>
+</ul>
+<p>布尔常量只有两个值：“true”和“false”，表示“真”和“假”，均为关键词，在机器中位长为8位。</p>
+<p>布尔型变量的类型说明符为booI，用来表示逻辑值。</p>
+<h3 id="运算符与表达式">运算符与表达式</h3>
+<p>C++语言中定义了丰富的运算符，如算术运算符、关系运算符、逻辑运算符等等，有些运算符需要两个操作数，使用形式为：&lt;操作数1&gt;运算符&lt;操作数2&gt;，这样的运算符称为二元运算符（<em>或二目运算符</em>）。另一些运算符只需要一个操作数，称为一元运算符（<em>或单目运算符</em>）。</p>
+<p>运算符具有优先级与结合性。当一个表达式包含多个运算符时，先进行优先级高的运算，再进行优先级低的运算。如果表达式中出现了多个相同优先级的运算，运算顺序就要看运算符的结合性了。所谓结合性，是指当一个操作数左右两边的运算符优先级相同时，按什么样的顺序进行运算，是自左向右，还是自右向左。例如，我们熟悉的算术表达式6+5-2中,“+”、 “-”是同级运算符，那么是先算5-2，还是先算6+5？这就取决于算术运算符的结合性。由于算术运算符的结合性为自左向右，所以应先算6+5，然后再算11-2。</p>
+<ul>
+<li><strong>算术运算符与算术表达式</strong></li>
+</ul>
+<p>C++中的算术运算符包括基本的算术运算符和自增、自减运算符。由算术运算符、操作数和括号构成的表达式称为算术表达式。</p>
+<p>基本算术运算符有：+（<em>加</em>）、-（减或负号）、*（乘）、/（除）、%（取余）。其中“-”作为负号时为一元运算符，其余都为二元运算符。这些基本算术运算符的意义与数学中相应符号的意义是一致的。它们之间的相对优先级关系与数学中的也是一致的，即先乘除、后加减，同级运算自左向右进行。使用算术运算符要注意以下几点：</p>
+<p>1、“%”是取余运算，只能用于整型操作数。表达式a%b的结果为a/b的余数。 “%”的优先级与“/”相同。</p>
+<p>2、当“/”用于两整型操作数相除时，其结果取商的整数部分，小数部分被自动舍弃。因此，表达式1/2的结果为0，这一点需要特别注意。</p>
+<p>3、C++中的“++” （<em>自增</em>）、 “--” （<em>自减</em>）运算符是使用方便且效率很高的两个运算符，它们都是一元运算符。</p>
+<p>这两个运算符都有前置和后置两种使用形式，无论写成前置或后置的形式，它们的作用都是将操作数的值增1（<em>减1</em>）后，重新写回该操作数在内存中的原有位置。所以，如果变量i原来的值是1，计算表达式i++后，表达式的结果为2，并且i的值也被改变为2。但是，当自增、自减运算的结果要被用于继续参与其它操作时，前置与后置时的情况就完全不同。例如，如果i的值为l，则</p>
+<pre><code>cout&lt;&lt;i++；
+cout&lt;&lt;++i；
+</code></pre>
+<p>第一条语句首先输出i当前的值1，然后i自增，其值变为2；第二条语句首先使i自增为2，然后输出i的值2。</p>
+<ul>
+<li><strong>赋值运算符与赋值表达式</strong></li>
+</ul>
+<p>C++提供了几个赋值运算符，最简单的赋值运算符就是“=”。带有赋值运算符的表达式被称为赋值表达式。例如，m=m+6就是一个赋值表达式。赋值表达式的作用就是将等号右边表达式的值赋给等号左边的对象。赋值表达式的类型为等号左边对象的类型，表达式的结果为等号左边对象被赋值后的值，运算的结合性为自右向左。请看下列赋值表达式的例子。</p>
+<pre><code>n=1
+</code></pre>
+<p>表达式值为1。</p>
+<pre><code>a=b=c=2
+</code></pre>
+<p>这个表达式从右向左运算，在c被更新为2后，表达式c=2的值为2，接着b的值被更新为2，最后a被赋值为2。</p>
+<pre><code>a=3+(c=4)
+</code></pre>
+<p>表达式值为7，a的值为7，c为4。</p>
+<p>除了“=”以外，C++还提供了10种复合的赋值运算符：+=，-=，*=，/=，%=，&lt;&lt;=，&gt;&gt;=，&amp;=，“=，|=。其中，前五个运算符是赋值运算符与算术运算符复合而成的，后五个是赋值运算符与位运算符复合而成的。关于位运算，稍后再做介绍。这里10种运算符的优先级与“=”相同，结合性也是自右向左。现在举例说明复合赋值运算符的功能。</p>
+<pre><code> b+=2;//等价于b=b+2
+ x*=y+3;//等价于x=x*(y+3)
+</code></pre>
+<p>如果在赋值表达式后面加上分号，便成为了赋值语句。例如：</p>
+<pre><code>b=b+2;
+</code></pre>
+<p>便是一个赋值语句，它实现的功能与赋值表达式相同。赋值表达式与赋值语句的不同点在于：赋值表达式可以作为一个更复杂表达式的一部分，继续参与运算；而赋值语句不能。</p>
+<ul>
+<li><strong>逗号运算符与逗号表达式</strong></li>
+</ul>
+<p>在C++中，逗号也是一个运算符，它的使用形式为：</p>
+<p>&lt;表达式1&gt;，&lt;表达式2&gt;，…，&lt;表达式n&gt;求解顺序为，先求解表达式1，再求解表达式2，最后求解表达式n的值。逗号表达式的最终结果为表达式n的值。例如：</p>
+<pre><code>x=2*5,x*4
+</code></pre>
+<p>表达式的结果为40。</p>
+<ul>
+<li><strong>关系运算符和关系表达式</strong></li>
+</ul>
+<p>关系运算符即比较符。</p>
+<p>用关系运算符将两个表达式连接起来就是关系表达式。关系表达式是一种最简单的逻辑表达式。例如：</p>
+<pre><code> x&gt;5
+ x+y&lt;=20
+ c==a+b
+</code></pre>
+<p><em>注：“==”（等于）是连续的两个等号，勿误写为赋值运算符“=”。</em></p>
+<p>关系表达式一般用于判断是否符合某一条件。关系表达式的结果类型为bool，值只能是true或false。条件满足为true，条件不满足为false。例如，当x=t时，x&gt;5的结果就为false。</p>
+<ul>
+<li><strong>逻辑运算符与逻辑表达式</strong></li>
+</ul>
+<p>用逻辑运算符将简单的关系表达式连接起来构成较复杂的逻辑表达式。逻辑表达式的结果类型也为bool，值只能为true或false。</p>
+<p>“!”是一元运算符，使用形式是： !操作数。非运算的作用是对操作数取反。如果操作数a的值为true，则表达式!a的值为false：如果操作数a的值为false，则表达式!a的值为true。</p>
+<p>“&amp;&amp;”是二元运算符。“&amp;&amp;”运算的作用是求两个操作数的逻辑与。只有当两个操作数的值都为true时，与运算的结果才为true，其它情况下与运算的结果均为false。</p>
+<p>“||”也是二元运算符。 “||”运算的作用是求两个操作数的逻辑或。只有当两个操作数的值都为false时，或运算的结果才为false，其它情况下或运算的结果均为true。</p>
+<h3 id="类和对象">类和对象</h3>
+<p>类所表示的一组对象十分相似，可以作为模板来有效的创建对象，利用类可以产生很多的对象类所代表的事物或者概念都是抽象的。在存取Private类型数据或者函数的时候，只有类本身声明的函数才是被允许的。类在与外部连接时，利用的就是Public共有类型函数，任何外部函数的访问都是运行的。</p>
+<p>对象主要是对客观事物的某个实体进行描述，它作为一个单位，共同组成了系统，它的组成是一组属性和一组服务，这组服务操作于这组属性。属性和服务是对象构成众多要素中的两种，属性的实质是一个数据项，主要是对对象静态特性进行描述，服务的实质是一个操作序列，主要是对对象动态特征进行描述。</p>
+<h3 id="关键字">关键字</h3>
+<p>关键字（<em>keyword</em>）是整个语言范围内预先保留的标识符，每个C++关键字都有特殊的含义。经过预处理后，关键字从预处理记号（<em>preprocessing-token</em>）中区出来，剩下的标识符作为记号（<em>token</em>），用于声明对象、函数、类型、命名空间等。不能声明与关键字同名的标识符。</p>
+<p>各个版本的ISO C++都规定以下划线接大写字母起始的标识符保留给实现。编译器可以用这些保留标识符作为扩展关键字，这不保证可移植性。以下讨论ISO C++所保留的关键字。</p>
+<p>ISO C++ 98关键字共63个，按标准排版如下：</p>
+<p><strong>ISO C++ 98关键字表</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">asm</th>
+<th style="text-align:left">do</th>
+<th style="text-align:left">if</th>
+<th style="text-align:left">return</th>
+<th style="text-align:left">typedef</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">auto</td>
+<td style="text-align:left">double</td>
+<td style="text-align:left">inline</td>
+<td style="text-align:left">short</td>
+<td style="text-align:left">typeid</td>
+</tr>
+<tr>
+<td style="text-align:left">bool</td>
+<td style="text-align:left">dynamic_cast</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">signed</td>
+<td style="text-align:left">typename</td>
+</tr>
+<tr>
+<td style="text-align:left">break</td>
+<td style="text-align:left">else</td>
+<td style="text-align:left">long</td>
+<td style="text-align:left">sizeof</td>
+<td style="text-align:left">union</td>
+</tr>
+<tr>
+<td style="text-align:left">case</td>
+<td style="text-align:left">enum</td>
+<td style="text-align:left">mutable</td>
+<td style="text-align:left">static</td>
+<td style="text-align:left">unsigned</td>
+</tr>
+<tr>
+<td style="text-align:left">catch</td>
+<td style="text-align:left">explicit</td>
+<td style="text-align:left">namespace</td>
+<td style="text-align:left">static_cast</td>
+<td style="text-align:left">using</td>
+</tr>
+<tr>
+<td style="text-align:left">char</td>
+<td style="text-align:left">export</td>
+<td style="text-align:left">new</td>
+<td style="text-align:left">struct</td>
+<td style="text-align:left">virtual</td>
+</tr>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">extern</td>
+<td style="text-align:left">operator</td>
+<td style="text-align:left">switch</td>
+<td style="text-align:left">void</td>
+</tr>
+<tr>
+<td style="text-align:left">const</td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">private</td>
+<td style="text-align:left">template</td>
+<td style="text-align:left">volatile</td>
+</tr>
+<tr>
+<td style="text-align:left">const_cast</td>
+<td style="text-align:left">float</td>
+<td style="text-align:left">protected</td>
+<td style="text-align:left">this</td>
+<td style="text-align:left">wchar_t</td>
+</tr>
+<tr>
+<td style="text-align:left">continue</td>
+<td style="text-align:left">for</td>
+<td style="text-align:left">public</td>
+<td style="text-align:left">throw</td>
+<td style="text-align:left">while</td>
+</tr>
+<tr>
+<td style="text-align:left">default</td>
+<td style="text-align:left">friend</td>
+<td style="text-align:left">register</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">delete</td>
+<td style="text-align:left">goto</td>
+<td style="text-align:left">reinterpret_cast</td>
+<td style="text-align:left">try</td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>本篇文章就到这里了，喜欢的就请点赞、收藏、打赏，关注我，有问题可以评论或私聊我，我们下篇文章再见😄</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://chentianyicty6330.github.io/tag/S3UWQsLog/" class="tag">
+                    c++learning
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://chentianyicty6330.github.io/post/primary-p1-language-basis-quick-c/">
+                  <h3 class="post-title">
+                    初级-Part1-语言基础-快速上手C++
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

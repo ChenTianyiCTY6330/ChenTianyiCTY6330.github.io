@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>初级-Part1-语言基础-IDE | 陈添翼的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://chentianyicty6330.github.io/favicon.ico?v=1674958785443">
+<link rel="stylesheet" href="https://chentianyicty6330.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+集成开发环境（IDE，Integrated Development Environment ）是用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。集成了代码编写功能、分析功能、编译功能、调试功能等一体..." />
+    <meta name="keywords" content="c++learning" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://chentianyicty6330.github.io">
+        <img src="https://chentianyicty6330.github.io/images/avatar.png?v=1674958785443" class="site-logo">
+        <h1 class="site-title">陈添翼的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      我是一名爱好广泛的初二学生
+<br> 一个没有博客的程序员不是好程序员</br>
+<br> See me on <a href="https://github.com/ChenTianyiCTY6330" target="_blank">GitHub</a> / <a href="https://blog.csdn.net/weixin_47561684" target="_blank">CSDN</a> / <a href="https://www.zhihu.com/people/chentianyi-93-62" target="_blank">知乎</a> / <a href="https://www.luogu.com.cn/user/696772" target="_blank">洛谷</a> </br>
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> / <a href="https://github.com/ChenTianyiCTY6330/ChenTianyiCTY6330.github.io" target="_blank">ChenTianyiCTY6330</a> | <a class="rss" href="https://chentianyicty6330.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">初级-Part1-语言基础-IDE</h2>
+            <div class="post-date">2023-01-29</div>
+            
+              <div class="feature-container" style="background-image: url('https://chentianyicty6330.github.io/post-images/primary-p1-language-basis-ide.jpeg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <blockquote>
+<p>集成开发环境（IDE，Integrated Development Environment ）是用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。集成了代码编写功能、分析功能、编译功能、调试功能等一体化的开发软件服务套。所有具备这一特性的软件或者软件套（组）都可以叫集成开发环境。如微软的Visual Studio系列，Borland的C++ Builder、Delphi系列等。该程序可以独立运行，也可以和其它程序并用。IDE多被用于开发HTML应用软件。例如，许多人在设计网站时使用IDE（如HomeSite、DreamWeaver等），因为很多项任务会自动生成。——百度百科</p>
+</blockquote>
+<p>简单的说，就是你编写、调试、编译代码的地方，下面推荐几个个写C++最常用的IDE.</p>
+<hr>
+<h2 id="dev-c">DEV-C++</h2>
+<p>适合初学者，~~不过我一直都在用，~~界面较为简洁，只需要下载使用就行了，什么头文件一些乱七八糟的东西已经帮你配置好了。</p>
+<p>下载网址链接：<a href="https://sourceforge.net/projects/orwelldevcpp/">Dev-C++ download | SourceForge.net</a></p>
+<p>步骤：</p>
+<p>1.点击Download下载</p>
+<figure data-type="image" tabindex="1"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/B5PMKAYAJ4" alt="" loading="lazy"></figure>
+<p>2.到你的下载文件夹里双击刚刚下载的应用程序</p>
+<figure data-type="image" tabindex="2"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/RJPMKAYAO4" alt="" loading="lazy"></figure>
+<p>然后耐心地等它加载</p>
+<figure data-type="image" tabindex="3"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/B5P4KAYA44" alt="" loading="lazy"></figure>
+<p>3.选择语言，先选择English（因为没有简体中文），然后点OK</p>
+<figure data-type="image" tabindex="4"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/MRP4KAYADM" alt="" loading="lazy"></figure>
+<p>4.点击I Agree</p>
+<figure data-type="image" tabindex="5"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/SRP4KAYAVQ" alt="" loading="lazy"></figure>
+<p>5.后面这些默认的东西不要管他，直接点Next</p>
+<figure data-type="image" tabindex="6"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/6ZP4KAYAM4" alt="" loading="lazy"></figure>
+<p>6.确认好你的安装路径，然后点Install开始安装</p>
+<figure data-type="image" tabindex="7"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/IFQMKAYAEQ" alt="" loading="lazy"></figure>
+<p>7.耐心等待......</p>
+<figure data-type="image" tabindex="8"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/B5Q4KAYADA" alt="" loading="lazy"></figure>
+<p>8.选择Run Dev-C++ 5.11，然后点Finish</p>
+<figure data-type="image" tabindex="9"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/MZQ4KAYAWQ" alt="" loading="lazy"></figure>
+<p>9.首次打开C++后开始配置，语言选简体中文/Chinese</p>
+<figure data-type="image" tabindex="10"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/VZQ4KAYAJ4" alt="" loading="lazy"></figure>
+<p>10.然后选择字体和颜色，建议默认，然后点Next</p>
+<figure data-type="image" tabindex="11"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/2VQ4KAYAEE" alt="" loading="lazy"></figure>
+<p>11.这样就配置成功了，点OK</p>
+<figure data-type="image" tabindex="12"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/DFRMKAYBDI" alt="" loading="lazy"></figure>
+<p>12.就会出现如下的界面，这就是我们写代码的界面了</p>
+<figure data-type="image" tabindex="13"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/SRRMKAYBLE" alt="" loading="lazy"></figure>
+<p>13.按Ctrl+N新建一个源代码，写上你的代码吧</p>
+<figure data-type="image" tabindex="14"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/JBR4KAYADI" alt="" loading="lazy"></figure>
+<p>14.按Ctrl+S保存一下，然后点顶部工具栏的编译运行图标，即可编译然后运行</p>
+<figure data-type="image" tabindex="15"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/ZZR4KAYADA" alt="" loading="lazy"></figure>
+<p>15.如果编译出代码没有问题，界面底部就是这样的</p>
+<figure data-type="image" tabindex="16"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/IBSMKAYAMM" alt="" loading="lazy"></figure>
+<p>紧接着会跳出一个命令提示符，你就可以根据代码在里面输入输出了</p>
+<figure data-type="image" tabindex="17"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/MVSMKAYAH4" alt="" loading="lazy"></figure>
+<p>*如果代码有问题，会报错，界面如下</p>
+<figure data-type="image" tabindex="18"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/3JSMKAYALM" alt="" loading="lazy"></figure>
+<p>你就可以根据编译结果来发现代码的错误并改正</p>
+<hr>
+<h2 id="其他">其他</h2>
+<p>还有一些比较高端的编译器这里就不具体介绍了，举几个例子</p>
+<h3 id="visual-studio-code">Visual Studio Code</h3>
+<figure data-type="image" tabindex="19"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/SJTMKAYADI" alt="" loading="lazy"></figure>
+<p>下载网址：<a href="https://code.visualstudio.com/">Visual Studio Code - Code Editing. Redefined</a></p>
+<p>安装教程：<a href="https://so.csdn.net/so/search?spm=1000.2115.3001.7498&amp;q=vscode%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B&amp;t=&amp;u=&amp;utm_term=vscode%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B&amp;utm_medium=distribute.pc_toolbar_associateword.none-task-associate_word-opensearch_query-5-%3Cem%3Evs%3C%2Fem%3Ecode%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B-null-null.179%5Ev5%5Epv&amp;depth_1-utm_source=distribute.pc_toolbar_associateword.none-task-associate_word-opensearch_query-5-%3Cem%3Evs%3C%2Fem%3Ecode%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B-null-null.179%5Ev5%5Epv&amp;request_id=167257443216800186596406&amp;opensearch_request_id=167257443216800186596406">vscode安装教程- CSDN搜索</a></p>
+<h3 id="clion">CLion</h3>
+<figure data-type="image" tabindex="20"><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/TEREYmZIVnRUVXdVQVp4VTUvcUNzcmROaGF2c0NSeVBUUmZ2c00vWTNIZXlMcExMd3ZxVmt3S3lqd0ZHT0g4RFIvK2V2Wi9UaDl5VVBXb05vS3prWThQdHdiQWxXUlhmVlhEUTdJMHd0eTdnMWxsMHFVTUZ1TjViNDhGbDJCa2dwYXZDK1NWYzViNFVvODc3Z0tCWnhjMDJMdDBQU1BUS2tza3pvaW8wQlo0YVZzVUxiTGxNVmJTMmxab2RoQnR0ejExcElqSWtURkljVUo1SzhQUVYwZnRLM1FONzM3SjNLdm5tV0c5c1VPRHRpUFBHMFpvSDVqQndyQzE3Z2JjOVRsaC9kNDlOTmMxd1JyNTdXbDFYbmk4RDRaUGtiNFJnNHFXcDFOQXB5QnhhZldBMzl3eFVyTmR3RzRUNQ==/attach/object/WRT4KAYAA4" alt="" loading="lazy"></figure>
+<p>下载网址：<a href="https://www.jetbrains.com/zh-cn/clion/download/#section=windows">下载 CLion：用于 C/C++ 开发的智能跨平台 IDE (jetbrains.com)</a></p>
+<p>安装教程：<a href="https://so.csdn.net/so/search?spm=1000.2115.3001.7498&amp;q=clion%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B&amp;t=&amp;u=&amp;utm_term=clion%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B&amp;utm_medium=distribute.pc_toolbar_associateword.none-task-associate_word-opensearch_query-1-%3Cem%3Eclion%3C%2Fem%3E%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B-null-null.179%5Ev5%5Epv&amp;depth_1-utm_source=distribute.pc_toolbar_associateword.none-task-associate_word-opensearch_query-1-%3Cem%3Eclion%3C%2Fem%3E%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B-null-null.179%5Ev5%5Epv&amp;request_id=167271864016800225597041&amp;opensearch_request_id=167271864016800225597041">clion安装教程- CSDN搜索</a></p>
+<hr>
+<p>本篇文章就到这里了，喜欢的就请点赞、收藏、打赏，关注我，有问题可以评论或私聊我，我们下篇文章再见😄</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://chentianyicty6330.github.io/tag/S3UWQsLog/" class="tag">
+                    c++learning
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://chentianyicty6330.github.io/post/primary-p1-language-basis-c-introduction/">
+                  <h3 class="post-title">
+                    初级-Part1-语言基础-C++简介
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

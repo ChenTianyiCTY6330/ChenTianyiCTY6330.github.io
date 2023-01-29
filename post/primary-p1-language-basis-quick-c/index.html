@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>初级-Part1-语言基础-快速上手C++ | 陈添翼的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://chentianyicty6330.github.io/favicon.ico?v=1674958785443">
+<link rel="stylesheet" href="https://chentianyicty6330.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="C++程序结构
+一个最最最简单的C++程序是由头文件、命名空间和主函数构成的。
+#include&lt;iostream&gt;//头文件
+using namespace std;//命名空间
+int main()//主函数
+{
+    c..." />
+    <meta name="keywords" content="c++learning" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://chentianyicty6330.github.io">
+        <img src="https://chentianyicty6330.github.io/images/avatar.png?v=1674958785443" class="site-logo">
+        <h1 class="site-title">陈添翼的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      我是一名爱好广泛的初二学生
+<br> 一个没有博客的程序员不是好程序员</br>
+<br> See me on <a href="https://github.com/ChenTianyiCTY6330" target="_blank">GitHub</a> / <a href="https://blog.csdn.net/weixin_47561684" target="_blank">CSDN</a> / <a href="https://www.zhihu.com/people/chentianyi-93-62" target="_blank">知乎</a> / <a href="https://www.luogu.com.cn/user/696772" target="_blank">洛谷</a> </br>
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> / <a href="https://github.com/ChenTianyiCTY6330/ChenTianyiCTY6330.github.io" target="_blank">ChenTianyiCTY6330</a> | <a class="rss" href="https://chentianyicty6330.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">初级-Part1-语言基础-快速上手C++</h2>
+            <div class="post-date">2023-01-29</div>
+            
+              <div class="feature-container" style="background-image: url('https://chentianyicty6330.github.io/post-images/primary-p1-language-basis-quick-c.jpeg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <h2 id="c程序结构">C++程序结构</h2>
+<p>一个最最最简单的C++程序是由头文件、命名空间和主函数构成的。</p>
+<pre><code>#include&lt;iostream&gt;//头文件
+using namespace std;//命名空间
+int main()//主函数
+{
+    cout&lt;&lt;&quot;代码内容&quot;;
+    return 0;//好习惯要保持
+}
+</code></pre>
+<hr>
+<h2 id="头文件">头文件</h2>
+<blockquote>
+<p>在C语言家族程序中，头文件被大量使用。一般而言，每个C++/C程序通常由头文件和定义文件组成。头文件作为一种包含功能函数、数据接口声明的载体文件，主要用于保存程序的声明，而定义文件用于保存程序的实现。——百度百科</p>
+</blockquote>
+<p><strong>系统自带</strong>的头文件这样引用：</p>
+<pre><code>#include&lt;头文件名&gt;
+</code></pre>
+<p><strong>自定义</strong>的头文件这样引用：</p>
+<pre><code>#include&quot;头文件名&quot;
+</code></pre>
+<p>万能头文件&lt;bits/stdc++.h&gt;：</p>
+<pre><code>// C++ includes used for precompiling -*- C++ -*-
+
+// Copyright (C) 2003-2014 Free Software Foundation, Inc.
+//
+// This file is part of the GNU ISO C++ Library.  This library is free
+// software; you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the
+// Free Software Foundation; either version 3, or (at your option)
+// any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// Under Section 7 of GPL version 3, you are granted additional
+// permissions described in the GCC Runtime Library Exception, version
+// 3.1, as published by the Free Software Foundation.
+
+// You should have received a copy of the GNU General Public License and
+// a copy of the GCC Runtime Library Exception along with this program;
+// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+// &lt;http://www.gnu.org/licenses/&gt;.
+
+/** @file stdc++.h
+ *  This is an implementation file for a precompiled header.
+ */
+
+// 17.4.1.2 Headers
+
+// C
+#ifndef _GLIBCXX_NO_ASSERT
+#include &lt;cassert&gt;
+#endif
+#include &lt;cctype&gt;
+#include &lt;cerrno&gt;
+#include &lt;cfloat&gt;
+#include &lt;ciso646&gt;
+#include &lt;climits&gt;
+#include &lt;clocale&gt;
+#include &lt;cmath&gt;
+#include &lt;csetjmp&gt;
+#include &lt;csignal&gt;
+#include &lt;cstdarg&gt;
+#include &lt;cstddef&gt;
+#include &lt;cstdio&gt;
+#include &lt;cstdlib&gt;
+#include &lt;cstring&gt;
+#include &lt;ctime&gt;
+
+#if __cplusplus &gt;= 201103L
+#include &lt;ccomplex&gt;
+#include &lt;cfenv&gt;
+#include &lt;cinttypes&gt;
+#include &lt;cstdalign&gt;
+#include &lt;cstdbool&gt;
+#include &lt;cstdint&gt;
+#include &lt;ctgmath&gt;
+#include &lt;cwchar&gt;
+#include &lt;cwctype&gt;
+#endif
+
+// C++
+#include &lt;algorithm&gt;
+#include &lt;bitset&gt;
+#include &lt;complex&gt;
+#include &lt;deque&gt;
+#include &lt;exception&gt;
+#include &lt;fstream&gt;
+#include &lt;functional&gt;
+#include &lt;iomanip&gt;
+#include &lt;ios&gt;
+#include &lt;iosfwd&gt;
+#include &lt;iostream&gt;
+#include &lt;istream&gt;
+#include &lt;iterator&gt;
+#include &lt;limits&gt;
+#include &lt;list&gt;
+#include &lt;locale&gt;
+#include &lt;map&gt;
+#include &lt;memory&gt;
+#include &lt;new&gt;
+#include &lt;numeric&gt;
+#include &lt;ostream&gt;
+#include &lt;queue&gt;
+#include &lt;set&gt;
+#include &lt;sstream&gt;
+#include &lt;stack&gt;
+#include &lt;stdexcept&gt;
+#include &lt;streambuf&gt;
+#include &lt;string&gt;
+#include &lt;typeinfo&gt;
+#include &lt;utility&gt;
+#include &lt;valarray&gt;
+#include &lt;vector&gt;
+
+#if __cplusplus &gt;= 201103L
+#include &lt;array&gt;
+#include &lt;atomic&gt;
+#include &lt;chrono&gt;
+#include &lt;condition_variable&gt;
+#include &lt;forward_list&gt;
+#include &lt;future&gt;
+#include &lt;initializer_list&gt;
+#include &lt;mutex&gt;
+#include &lt;random&gt;
+#include &lt;ratio&gt;
+#include &lt;regex&gt;
+#include &lt;scoped_allocator&gt;
+#include &lt;system_error&gt;
+#include &lt;thread&gt;
+#include &lt;tuple&gt;
+#include &lt;typeindex&gt;
+#include &lt;type_traits&gt;
+#include &lt;unordered_map&gt;
+#include &lt;unordered_set&gt;
+#endif
+
+</code></pre>
+<p>头文件大全：</p>
+<pre><code>//传统C++
+#include&lt;assert.h&gt;//设定插入点
+ 
+#include&lt;ctype.h&gt;//字符处理
+ 
+#include&lt;errno.h&gt;//定义错误码
+ 
+#include&lt;float.h&gt;//浮点数处理
+ 
+#include&lt;fstream.h&gt;//文件输入/输出
+ 
+#include&lt;iomanip.h&gt;//参数化输入/输出
+ 
+#include&lt;iostream.h&gt;//数据流输入/输出
+ 
+#include&lt;limits.h&gt;//定义各种数据类型最值常量
+ 
+#include&lt;locale.h&gt;//定义本地化函数
+ 
+#include&lt;math.h&gt;//定义数学函数
+ 
+#include&lt;stdio.h&gt;//定义输入/输出函数
+ 
+#include&lt;stdlib.h&gt;//定义杂项函数及内存分配函数
+ 
+#include&lt;string.h&gt;//字符串处理
+ 
+#include&lt;strstrea.h&gt;//基于数组的输入/输出
+ 
+#include&lt;time.h&gt;//定义关于时间的函数
+ 
+#include&lt;wchar.h&gt;//宽字符处理及输入/输出
+ 
+#include&lt;wctype.h&gt;//宽字符分类
+</code></pre>
+<!---->
+<pre><code>//标准C++
+#include&lt;algorithm&gt;//STL通用算法
+ 
+#include&lt;bitset&gt;//STL位集容器
+ 
+#include&lt;bits/stdc++.h&gt;//编译器GCC 4.8支持的万能头文件，基本包含所有头文件
+ 
+#include&lt;cctype&gt;//C字符处理
+ 
+#include&lt;cerrno&gt;//C的错误报告机制
+ 
+#include&lt;clocale&gt;
+ 
+#include&lt;cmath&gt;//兼容C语言数学库
+ 
+#include&lt;complex&gt;//复数类
+ 
+#include&lt;cstdio&gt;//C语言输入输出工具
+ 
+#include&lt;cstdlib&gt;//C语言通用工具
+ 
+#include&lt;cstring&gt;//C字符串
+ 
+#include&lt;ctime&gt;
+ 
+#include&lt;deque&gt;//STL双端队列容器
+ 
+#include&lt;exception&gt;//异常处理类
+ 
+#include&lt;fstream&gt;//文件输入输出流
+ 
+#include&lt;functional&gt;//STL定义运算函数（代替运算符）
+ 
+#include&lt;limits&gt;
+ 
+#include&lt;list&gt;//STL线性列表容器
+ 
+#include&lt;map&gt;//STL映射容器
+ 
+#include&lt;iomanip&gt;
+ 
+#include&lt;ios&gt;//基本输入/输出支持
+ 
+#include&lt;iosfwd&gt;//输入/输出系统使用的前置声明
+ 
+#include&lt;iostream&gt;//基本输入输出流
+ 
+#include&lt;queue&gt;//STL队列容器
+ 
+#include&lt;set&gt;//STL集合容器
+ 
+#include&lt;sstream&gt;//基于字符串的流
+ 
+#include&lt;stack&gt;//STL堆栈容器
+ 
+#include&lt;stdexcept&gt;//标准异常类
+ 
+#include&lt;streambuf&gt;//底层输入/输出支持
+ 
+#include&lt;string&gt;//字符串类
+ 
+#include&lt;utility&gt;//STL通用模板类
+ 
+#include&lt;vector&gt;//STL动态数组容器
+ 
+#include&lt;cwchar&gt;
+ 
+#include&lt;cwctype&gt;
+</code></pre>
+<!---->
+<pre><code>//C99版本
+#include&lt;complex.h&gt;//复数处理
+ 
+#include&lt;fenv.h&gt;//浮点环境
+ 
+#include&lt;inttypes.h&gt;//整数格式转换
+ 
+#include&lt;stdbool.h&gt;//布尔环境
+ 
+#include&lt;stdint.h&gt;//整型环境
+ 
+#include&lt;tgmath.h&gt;//通用类型数学宏
+</code></pre>
+<hr>
+<h2 id="命名空间">命名空间</h2>
+<blockquote>
+<p>namespace即“命名空间”，也称“名称空间” 。是许多编程语言使用的一种代码组织的形式，通过命名空间来分类，区别不同的代码功能，避免不同的代码片段（通常由不同的人协同工作或调用已有的代码片段）同时使用时由于不同代码间变量名相同而造成冲突。——百度百科</p>
+</blockquote>
+<p>写代码时一般且最简单的命名空间就是：</p>
+<pre><code>using namespace std;
+</code></pre>
+<hr>
+<h2 id="主函数">主函数</h2>
+<p>main() 函数是 C++ 程序的入口函数，C++ 标准规定 main() 函数的返回值类型为 int，返回值用于表示程序的退出状态，返回 0 表示程序正常退出，返回非 0，表示出现异常。</p>
+<p>所以主函数定义要这样写：</p>
+<pre><code>int main()
+{
+    
+    return 0;
+}
+</code></pre>
+<hr>
+<p>本篇文章就到这里了，喜欢的就请点赞、收藏、打赏，关注我，有问题可以评论或私聊我，我们下篇文章再见😄</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://chentianyicty6330.github.io/tag/S3UWQsLog/" class="tag">
+                    c++learning
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://chentianyicty6330.github.io/post/c-curriculum-planning/">
+                  <h3 class="post-title">
+                    C++系列课程学习规划
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

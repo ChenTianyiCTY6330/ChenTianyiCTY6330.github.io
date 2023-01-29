@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>C++系列课程学习规划 | 陈添翼的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://chentianyicty6330.github.io/favicon.ico?v=1674958785443">
+<link rel="stylesheet" href="https://chentianyicty6330.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="C++初级班（120小时）
+
+这个部分主要是帮助语言同学快速入门C++。
+
+Part 1:
+语言基础
+快速上手 C++
+C++简介
+IDE
+赋值语句、运算符、表达式、常量
+变量、数据类型
+数据输入输出、顺序结构
+程序的控制结构
+if、swi..." />
+    <meta name="keywords" content="c++learning" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://chentianyicty6330.github.io">
+        <img src="https://chentianyicty6330.github.io/images/avatar.png?v=1674958785443" class="site-logo">
+        <h1 class="site-title">陈添翼的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      我是一名爱好广泛的初二学生
+<br> 一个没有博客的程序员不是好程序员</br>
+<br> See me on <a href="https://github.com/ChenTianyiCTY6330" target="_blank">GitHub</a> / <a href="https://blog.csdn.net/weixin_47561684" target="_blank">CSDN</a> / <a href="https://www.zhihu.com/people/chentianyi-93-62" target="_blank">知乎</a> / <a href="https://www.luogu.com.cn/user/696772" target="_blank">洛谷</a> </br>
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> / <a href="https://github.com/ChenTianyiCTY6330/ChenTianyiCTY6330.github.io" target="_blank">ChenTianyiCTY6330</a> | <a class="rss" href="https://chentianyicty6330.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">C++系列课程学习规划</h2>
+            <div class="post-date">2023-01-28</div>
+            
+              <div class="feature-container" style="background-image: url('https://chentianyicty6330.github.io/post-images/c-curriculum-planning.jpeg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <h2 id="c初级班120小时">C++初级班（120小时）</h2>
+<blockquote>
+<p>这个部分主要是帮助语言同学快速入门C++。</p>
+</blockquote>
+<p><strong>Part 1:</strong></p>
+<p><strong>语言基础</strong></p>
+<p>快速上手 C++</p>
+<p>C++简介</p>
+<p>IDE</p>
+<p>赋值语句、运算符、表达式、常量</p>
+<p>变量、数据类型</p>
+<p>数据输入输出、顺序结构</p>
+<p>程序的控制结构</p>
+<p>if、switch 选择结构</p>
+<p>选择语句的嵌套。</p>
+<p>循环结构，for 循环语句，while 循环，</p>
+<p>do-while 循环，循环嵌套。</p>
+<p>三种结构嵌套运用。</p>
+<p>数组：二维数组</p>
+<p>字符数组</p>
+<p>字符串数组</p>
+<p>文件操作</p>
+<p>结构体、指针</p>
+<p><strong>Part 2: C++的结构体</strong></p>
+<p><strong>重载运算符</strong></p>
+<p>如何自己定义加减乘除</p>
+<p>如何自己定义比较大小</p>
+<p><strong>Part 3: STL 部分</strong></p>
+<p><strong>STL</strong></p>
+<p>std::vector 不定长数组</p>
+<p>std::set 快速查找</p>
+<p>std::map 数组的下标</p>
+<p>std::string 现代化的字符串</p>
+<p><strong>Part 4：快速实现基础数据结构</strong></p>
+<p><strong>链表(Linked list)</strong></p>
+<p>链表是什么</p>
+<p>如何<strong>快速实现</strong>链表</p>
+<p><strong>栈(Stack)</strong></p>
+<p>栈是什么</p>
+<p>如何<strong>快速实现</strong>栈</p>
+<p><strong>队列(Queue)</strong></p>
+<p>队列是什么</p>
+<p>如何<strong>快速实现</strong>队列</p>
+<hr>
+<h2 id="算法中级班120-小时"><strong>算法中级班（120 小时）</strong></h2>
+<p><strong>Part 1: 算法入门</strong></p>
+<p><strong>什么是一个好算法</strong></p>
+<p>时空复杂度分析</p>
+<p><strong>如何找到一个答案</strong></p>
+<p>枚举法</p>
+<p><strong>模拟算法</strong></p>
+<p><strong>贪心算法</strong></p>
+<p><strong>递归</strong></p>
+<p>什么是递归</p>
+<p>递归的实现</p>
+<p><strong>分治</strong></p>
+<p><strong>序列算法</strong></p>
+<p>前缀和</p>
+<p>尺取法(双指针)</p>
+<p><strong>在有序数据中快速查找</strong></p>
+<p>二分查找</p>
+<p><strong>Part 2: 排序算法</strong></p>
+<p><strong>归并排序</strong></p>
+<p>递归处理</p>
+<p>合并数组</p>
+<p>应用：逆序对</p>
+<p><strong>快速排序</strong></p>
+<p>自定义 comp 函数</p>
+<p>结构体内重载运算符</p>
+<p><strong>桶排序</strong></p>
+<p><strong>Part 3：搜索算法</strong></p>
+<p><strong>深度优先搜索(DFS)</strong></p>
+<p><strong>广度优先搜索(BFS)</strong></p>
+<p><strong>如何优化搜索</strong></p>
+<p>记忆化搜索</p>
+<p>剪枝</p>
+<p>可行性剪枝</p>
+<p>上下界剪枝</p>
+<p>最优化剪枝</p>
+<p><strong>Part 4：数据结构</strong></p>
+<p><strong>基础数据结构怎么考</strong></p>
+<p>链表、栈、队列的习题</p>
+<p><strong>树</strong></p>
+<p>如何存储一颗树</p>
+<p>邻接矩阵</p>
+<p>邻接表</p>
+<p>链式前向星</p>
+<p>vector</p>
+<p>如何遍历一颗树</p>
+<p><strong>堆</strong></p>
+<p>什么是堆</p>
+<p>如何<strong>快速实现</strong>一个堆</p>
+<p>堆的优先级定义、运算符重载</p>
+<p><strong>并查集</strong></p>
+<p>什么是并查集</p>
+<p>并查集的快速实现</p>
+<p>按秩合并</p>
+<p>路径压缩</p>
+<p><strong>Part 5：动态规划</strong></p>
+<p><strong>递推</strong></p>
+<p>经典递推问题</p>
+<p><strong>背包问题</strong></p>
+<p>01 背包</p>
+<p>完全背包</p>
+<p>多重背包（二进制分解）</p>
+<p>滚动数组</p>
+<p><strong>经典动态规划问题</strong></p>
+<p>最长上升子序列</p>
+<p>最长公共子序列</p>
+<p>典型题：LCS 转 LIS</p>
+<p><strong>Part 6：图论</strong></p>
+<p><strong>图</strong></p>
+<p>什么是图</p>
+<p>如何存图</p>
+<p>链式前向星</p>
+<p>如何遍历图</p>
+<p><strong>最短路问题</strong></p>
+<p>Floyd 算法</p>
+<p>Dijkstra、堆优化算法</p>
+<p>SPFA 算法</p>
+<p><strong>最小生成树问题</strong></p>
+<p>Kruskal 算法</p>
+<p>Prim 算法</p>
+<p><strong>拓扑图</strong></p>
+<p><strong>Part 7：数学</strong></p>
+<p>进制转化</p>
+<p>gcd</p>
+<p>素数判断</p>
+<p>素数筛法（埃氏筛法）</p>
+<p>模运算及其性质</p>
+<p><strong>快速幂</strong></p>
+<hr>
+<h2 id="算法高级班240-小时"><strong>算法高级班（240 小时）</strong></h2>
+<p><strong>Part 1: 算法入门</strong></p>
+<p><strong>位运算</strong></p>
+<p>二进制枚举</p>
+<p><strong>序列算法</strong></p>
+<p>序列差分及应用</p>
+<p><strong>二分答案</strong></p>
+<p>解决答案单调性问题</p>
+<p><strong>倍增算法</strong></p>
+<p>涉及倍增的 dp（跑路）</p>
+<p>RMQ 问题</p>
+<p>倍增求 LCA</p>
+<p>离散化</p>
+<p>悬线法</p>
+<p><strong>Part 2: 搜索</strong></p>
+<p><strong>双向 BFS</strong></p>
+<p><strong>剪枝技巧</strong></p>
+<p><strong>Part 3：数据结构</strong></p>
+<p><strong>单调数据结构</strong></p>
+<p>单调栈</p>
+<p>单调队列</p>
+<p><strong>快速区间查询</strong></p>
+<p>分块</p>
+<p>树状数组入门</p>
+<p>线段树入门</p>
+<p><strong>Part 4：图论</strong></p>
+<p><strong>二分图</strong></p>
+<p>什么是二分图</p>
+<p>二分图匹配</p>
+<p><strong>强连通性</strong></p>
+<p>Tarjan 算法</p>
+<p>缩点</p>
+<p>点/边双连通性、双连通分量</p>
+<p>割边、割点求法</p>
+<p><strong>缩点</strong></p>
+<p>DAG 上的 DP 问题</p>
+<p>最短路问题</p>
+<p><strong>最短路问题扩展</strong></p>
+<p>差分约束模型</p>
+<p>分层图最短路模型</p>
+<p><strong>拓扑排序</strong></p>
+<p>图论综合应用</p>
+<p><strong>树相关</strong></p>
+<p>树的直径</p>
+<p>树的重心</p>
+<p>最近公共祖先</p>
+<p><strong>Part 5：动态规划</strong></p>
+<p><strong>区间型 DP</strong></p>
+<p><strong>状态压缩型 DP</strong></p>
+<p><strong>树形 DP</strong></p>
+<p><strong>数位 DP</strong></p>
+<p><strong>Part 6：数学</strong></p>
+<p><strong>素数</strong></p>
+<p>埃氏线性素数筛</p>
+<p><strong>欧几里得</strong></p>
+<p>gcd</p>
+<p>ex_gcd</p>
+<p>同余</p>
+<p>不定方程</p>
+<p>费马小定理</p>
+<p>求逆元</p>
+<p>线性求 n 个数逆元</p>
+<p><strong>欧拉</strong></p>
+<p>高斯消元</p>
+<p>欧拉函数</p>
+<p>线性欧拉筛</p>
+<p><strong>快速幂</strong></p>
+<p><strong>组合数学</strong></p>
+<p>排列组合</p>
+<p>卡特兰数</p>
+<p>[scoi2010] 生成字符串</p>
+<p>容斥原理</p>
+<p><strong>线性代数</strong></p>
+<p>矩阵乘法</p>
+<p>结合快速幂</p>
+<p><strong>抽屉原理</strong></p>
+<p><strong>Part 7: 字符串</strong></p>
+<p><strong>字符串匹配问题</strong></p>
+<p>Trie 树</p>
+<p>字符串哈希</p>
+<p>KMP</p>
+<p>扩展 KMP</p>
+<p><strong>回文串问题</strong></p>
+<p>Manacher</p>
+<hr>
+<h2 id="算法省选班"><strong>算法省选班</strong></h2>
+<p><strong>Part 1: 计算几何</strong></p>
+<p>叉积</p>
+<p>判断点、线段、直线、多边形的相互位置关系</p>
+<p>凸多边形面积、重心计算</p>
+<p>凸包的定义与求法</p>
+<p>最近/远点对</p>
+<p>半平面交</p>
+<p>矩形的并与交</p>
+<p>三角剖分</p>
+<p>Pick 定理</p>
+<p>计算相关（扫描线计算面积，三位凸包体积）</p>
+<p>极坐标系</p>
+<p>欧氏距离，曼哈顿距离与切比雪夫距离</p>
+<p>曼哈顿距离与切比雪夫距离的转化</p>
+<p>扫描线</p>
+<p>自适应 Simpson 积分</p>
+<p><strong>Part 2: 基础算法</strong></p>
+<p>二分 Plus</p>
+<p>二分套二分</p>
+<p>分数规划问题</p>
+<p>二进制 Plus</p>
+<p>枚举子集</p>
+<p>简单的二进制计数</p>
+<p>01 Trie</p>
+<p>大模拟</p>
+<p><strong>Part 3: 搜索</strong></p>
+<p>A*算法</p>
+<p>迭代加深算法与 IDA*</p>
+<p><strong>Part 4: 数据结构</strong></p>
+<p><strong>线段树</strong></p>
+<p>区间修改，区间查询</p>
+<p>lazy tag</p>
+<p>维护不同种内容</p>
+<p>树链剖分</p>
+<p>分块数据结构</p>
+<p>分块</p>
+<p>莫队算法</p>
+<p>离线算法</p>
+<p>莫队算法</p>
+<p>CDQ 分治（三维偏序）</p>
+<p>可持久化</p>
+<p>可持久化线段树</p>
+<p>散列表</p>
+<p>堆</p>
+<p>可并堆</p>
+<p>平衡树</p>
+<p>伸展树</p>
+<p>Treap 树</p>
+<p>动态树</p>
+<p>Link-Cut 树</p>
+<p><strong>Part 5: 图论</strong></p>
+<p>连通性</p>
+<p>2-SAT 问题</p>
+<p><strong>树上问题</strong></p>
+<p>启发式合并</p>
+<p>虚树</p>
+<p>点分治</p>
+<p>最小树形图 朱-刘算法</p>
+<p><strong>网络流</strong></p>
+<p>最大流</p>
+<p>最小费用流</p>
+<p>最小割</p>
+<p>上下界网络流</p>
+<p>平面图-对偶图</p>
+<p>网络流建模基础：网络流 24 题</p>
+<p><strong>Part 6: 动态规划</strong></p>
+<p><strong>DP 优化</strong></p>
+<p>单调队列/单调栈优化</p>
+<p>数据结构优化</p>
+<p>斜率优化</p>
+<p>四边形不等式优化</p>
+<p><strong>Part 7: 数学&amp;数论</strong></p>
+<p>原根和指标</p>
+<p><strong>素数相关</strong></p>
+<p>Miller-Rabin 素数判定</p>
+<p>Pollard's Rho 质因子分解</p>
+<p><strong>同余问题进阶</strong></p>
+<p>中国剩余定理及其扩展</p>
+<p>BSGS 及其扩展原根及其性质</p>
+<p>高次剩余</p>
+<p>二次剩余</p>
+<p>原根及离散对数</p>
+<p>Lucas 定理</p>
+<p>卢卡斯定理</p>
+<p>数论函数初步（欧拉函数，莫比乌斯函数，除数函数等常见积性函数及其性质）</p>
+<p>狄利克雷卷积及其性质</p>
+<p><strong>组合数学</strong></p>
+<p>8 种球盒问题</p>
+<p>斯特林数及其性质</p>
+<p>整数拆分问题</p>
+<p>二项式反演</p>
+<p><strong>概率期望</strong></p>
+<p>期望的线性性</p>
+<p>概率 dp</p>
+<p>概率方程组求解</p>
+<p><strong>线性代数</strong></p>
+<p>高斯消元</p>
+<p>线性递推与矩阵快速幂</p>
+<p>线性基</p>
+<p><strong>多项式与幂级数</strong></p>
+<p>DFT/FFT</p>
+<p>FFT 与 FNTT 算法的实现</p>
+<p>拉格朗日插值</p>
+<p>NTT</p>
+<p>任意模数 NTT</p>
+<p><strong>Part 8: 博弈论与信息论</strong></p>
+<p>组合游戏</p>
+<p>SG 函数</p>
+<p>Nim 游戏</p>
+<p>数据压缩</p>
+<p>哈夫曼编码</p>
+<p><strong>Part 9: 字符串</strong></p>
+<p>模式匹配</p>
+<p>AC 自动机</p>
+<p>Trie 图</p>
+<p>字典树</p>
+<p>01-Trie</p>
+<p>KMP、Trie 上的 DP</p>
+<p>AC 自动机上的 DP</p>
+<p>回文串</p>
+<p>Manacher 算法</p>
+<p><strong>Part 10: 分治</strong></p>
+<p>树分治</p>
+<p>重链剖分</p>
+<p>长链剖分</p>
+<p>树套树</p>
+<p><strong>Part 12: 随机化与近似算法</strong></p>
+<p>爬山法</p>
+<p>模拟退火</p>
+<p>遗传算法</p>
+<hr>
+<h2 id="算法-noi-班"><strong>算法 NOI 班</strong></h2>
+<p><strong>Part 1: 数据结构</strong></p>
+<p>高级数据结构进阶</p>
+<p>左偏树</p>
+<p>树套树</p>
+<p>动态树 LCT</p>
+<p>K-D Tree</p>
+<p>平衡树</p>
+<p>替罪羊树</p>
+<p>可持久化平衡树</p>
+<p>分块数据结构</p>
+<p>树分块</p>
+<p>树上莫队</p>
+<p>离线算法</p>
+<p>莫队算法进阶</p>
+<p>带修改莫队</p>
+<p>树上莫队</p>
+<p>回滚莫队</p>
+<p>动态树</p>
+<p>TopTree</p>
+<p>Dancing Links</p>
+<p>各种数据结构的综合应用</p>
+<p><strong>仙人掌相关</strong></p>
+<p>圆方树与仙人掌剖分</p>
+<p><strong>Part 2: 代数</strong></p>
+<p>线性代数</p>
+<p>矩阵树定理</p>
+<p>莫比乌斯反演</p>
+<p>素性测试</p>
+<p>Miller-Robin</p>
+<p>Pollard’s ρ质因子分解</p>
+<p>原根和指标</p>
+<p><strong>数论部分</strong></p>
+<p>杜教筛</p>
+<p>Min25 筛</p>
+<p>洲阁筛</p>
+<p><strong>组合数学</strong></p>
+<p>生成函数</p>
+<p><strong>多项式与幂级数</strong></p>
+<p>FFT/FNTT 算法原理</p>
+<p>FWT</p>
+<p>多项式除法/求逆/开方/对数指数函数等各种算法</p>
+<p>常系数齐次线性递推</p>
+<p><strong>群论</strong></p>
+<p>置换群的定义与性质</p>
+<p>Burnside 引理</p>
+<p>Polya 定理</p>
+<p><strong>博弈论</strong></p>
+<p>Nim 游戏</p>
+<p>SG 函数</p>
+<p><strong>Part 3: 计算几何</strong></p>
+<p>旋转卡壳</p>
+<p>半平面交</p>
+<p>三角剖分</p>
+<p>随机增量法（最小圆覆盖问题）</p>
+<p><strong>Part 4: 图论</strong></p>
+<p>网络流问题</p>
+<p>各种建模技巧</p>
+<p>线性规划与单纯形算法</p>
+<p>树相关问题</p>
+<p>边分治</p>
+<p>动态点分治</p>
+<p>Prufer 序列</p>
+<p>基环树相关问题</p>
+<p>欧拉图与哈密顿图的定义与性质</p>
+<p>弦图相关（不要求）</p>
+<p>各种图论问题的综合应用</p>
+<p><strong>Part 5: 字符串</strong></p>
+<p>字典树</p>
+<p>后缀树</p>
+<p>后缀自动机</p>
+<p>广义后缀自动机</p>
+<p>回文树</p>
+<p>各种综合性字符串问题</p>
+<p>回文串</p>
+<p>回文树</p>
+<p><strong>Part 6: 分治</strong></p>
+<p>序列分治</p>
+<p>整体二分</p>
+<p>树分治</p>
+<p>点/边分治</p>
+<p><strong>Part 7: 动态规划</strong></p>
+<p>DDP (动态动态规划)</p>
+<p>Dp 套 DP</p>
+<hr>
+<p>本篇文章就到这里了，喜欢的就请点赞、收藏、打赏，关注我，有问题可以评论或私聊我，我们下篇文章再见😄</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://chentianyicty6330.github.io/tag/S3UWQsLog/" class="tag">
+                    c++learning
+                  </a>
+                
+              </div>
+            
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
